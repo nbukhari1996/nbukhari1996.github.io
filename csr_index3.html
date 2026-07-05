@@ -390,6 +390,18 @@
             typeIcon: 'bi-people-fill',
             years: '2026',
             location: 'Eastern Province'
+        },        {
+            src: '',
+            image: 'https://esadtalents.com/content/imgs/logo.png',
+            title: 'Tree Plantation Drive',
+            cat: 'Environment',
+            desc: 'Volunteer-led tree planting drive, in collaboration with Khobar Municipality, to\n' +
+                '                                    support\n' +
+                '                                    environmental sustainability and enhance green spaces within the community.',
+            type: 'Community Volunteering',
+            typeIcon: 'bi-hand-thumbs-up-fill',
+            years: '2026',
+            location: 'Eastern Province'
         },
     ];
     const plainTrack = document.querySelector('.plain-track');
@@ -397,32 +409,38 @@
     const plainCaptionBox = document.querySelector('.plain-caption-box');
     let plainCurrent = 0;
 
-    // build slides and dots from data
     plainData.forEach((d, i) => {
-        // slide
         const slide = document.createElement('div');
         slide.className = 'plain-slide';
-        const video = document.createElement('video');
-        video.src = d.src;
-        video.muted = true;
-        video.loop = true;
-        video.playsInline = true;
-        if (i === 0) video.autoplay = true;
-        video.addEventListener('click', function () {
-            if (this.requestFullscreen) this.requestFullscreen();
-            else if (this.webkitRequestFullscreen) this.webkitRequestFullscreen();
-            else if (this.webkitEnterFullscreen) this.webkitEnterFullscreen();
-        });
-        slide.appendChild(video);
+
+        if (d.src) {
+            const video = document.createElement('video');
+            video.src = d.src;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            if (i === 0) video.autoplay = true;
+            video.addEventListener('click', function () {
+                if (this.requestFullscreen) this.requestFullscreen();
+                else if (this.webkitRequestFullscreen) this.webkitRequestFullscreen();
+                else if (this.webkitEnterFullscreen) this.webkitEnterFullscreen();
+            });
+            slide.appendChild(video);
+        } else if (d.image) {
+            slide.classList.add('plain-slide-logo');
+            const img = document.createElement('img');
+            img.src = d.image;
+            img.alt = d.title;
+            slide.appendChild(img);
+        }
+
         plainTrack.appendChild(slide);
 
-        // dot
         const dot = document.createElement('button');
         dot.className = 'plain-dot' + (i === 0 ? ' active' : '');
         dot.addEventListener('click', () => plainGoTo(i));
         plainDotsContainer.appendChild(dot);
     });
-
     const plainSlides = plainTrack.querySelectorAll('.plain-slide');
 
     function plainUpdateCaption(index) {
@@ -440,10 +458,15 @@
     }
 
     function plainGoTo(index) {
-        plainSlides[plainCurrent].querySelector('video').pause();
+        const prevVideo = plainSlides[plainCurrent].querySelector('video');
+        if (prevVideo) prevVideo.pause();
+
         plainCurrent = Math.max(0, Math.min(index, plainSlides.length - 1));
         plainTrack.style.transform = `translateX(-${plainCurrent * 100}%)`;
-        plainSlides[plainCurrent].querySelector('video').play();
+
+        const nextVideo = plainSlides[plainCurrent].querySelector('video');
+        if (nextVideo) nextVideo.play();
+
         plainUpdateCaption(plainCurrent);
         document.querySelectorAll('.plain-dot').forEach((d, i) => {
             d.classList.toggle('active', i === plainCurrent);
@@ -454,6 +477,7 @@
     document.querySelector('.plain-next').addEventListener('click', () => plainGoTo(plainCurrent + 1));
 
     plainUpdateCaption(0);
+
 </script>
 </body>
 
