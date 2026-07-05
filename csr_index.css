@@ -1301,3 +1301,18 @@ footer hr {
     color: #fff;
 }
 
+.plain-slide-logo {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plain-slide-logo img {
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    max-height: 55%;
+    object-fit: contain;
+}
+
