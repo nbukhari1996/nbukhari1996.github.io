@@ -1372,6 +1372,14 @@ footer hr {
     direction: rtl;
 }
 
+.project-img.no-overlay {
+    background-color: #ffffff;
+}
+.project-img.no-overlay::after {
+    display: none;
+}
+
+
 /* Arabic mode: swap the display font and mirror text alignment.
    Layout (grid/flex order, icons, slider mechanics) is left as-is;
    for a fully mirrored RTL layout, add direction-specific rules to csr_index.css. */
