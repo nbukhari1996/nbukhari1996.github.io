@@ -1329,3 +1329,10 @@ footer hr {
     max-height: 90%;
     object-fit: contain;
 }
+
+.project-img.no-overlay {
+    background-color: #ffffff;
+}
+.project-img.no-overlay::after {
+    display: none;
+}
