@@ -159,6 +159,22 @@
                     </div>
                 </div>
 
+                <div class="vid-slide vid-slide-image">
+                    <img src="https://esadtalents.com/content/imgs/logo.png" alt="حملة زراعة الأشجار">
+                    <div class="vid-overlay"></div>
+                    <div class="vid-caption">
+                        <span class="vid-cat-badge">Environment</span>
+                        <h3>Tree planting drive</h3>
+                        <p>Volunteer-led tree planting drive, in collaboration with Khobar Municipality, to support environmental 
+                            sustainability and enhance green spaces within the community.</p>
+                        <div class="vid-meta">
+                            <span class="vid-meta-item"><i class="bi bi-hand-thumbs-up-fill"></i> Volunteering</span>
+                            <span class="vid-meta-item"><i class="bi bi-calendar"></i> 2026</span>
+                            <span class="vid-meta-item"><i class="bi bi-geo-alt-fill"></i> Eastern Province</span>
+                        </div>
+                    </div>
+                </div>
+
 <div class="vid-slide">
     <video src="https://vz-6a6d1e94-ffc.b-cdn.net/d16a502a-2743-466a-8905-db4ef7c7b9dc/play_1080p.mp4"
            muted loop playsinline></video>
@@ -483,31 +499,37 @@
     const vidDotsContainer = document.querySelector('.vid-dots');
     let vidCurrent = 0;
 
-    // build dots
     vidSlides.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.className = 'vid-dot' + (i === 0 ? ' active' : '');
         dot.addEventListener('click', () => vidGoTo(i));
         vidDotsContainer.appendChild(dot);
     });
+
     vidSlides.forEach(slide => {
-        slide.querySelector('video').addEventListener('click', function () {
-            if (this.requestFullscreen) {
-                this.requestFullscreen();
-            } else if (this.webkitRequestFullscreen) {
-                this.webkitRequestFullscreen(); // Safari
-            } else if (this.webkitEnterFullscreen) {
-                this.webkitEnterFullscreen(); // iOS
-            }
-        });
+        const video = slide.querySelector('video');
+        if (video) {
+            video.addEventListener('click', function () {
+                if (this.requestFullscreen) {
+                    this.requestFullscreen();
+                } else if (this.webkitRequestFullscreen) {
+                    this.webkitRequestFullscreen();
+                } else if (this.webkitEnterFullscreen) {
+                    this.webkitEnterFullscreen();
+                }
+            });
+        }
     });
 
     function vidGoTo(index) {
-        // pause current, play next
-        vidSlides[vidCurrent].querySelector('video').pause();
+        const prevVideo = vidSlides[vidCurrent].querySelector('video');
+        if (prevVideo) prevVideo.pause();
+
         vidCurrent = Math.max(0, Math.min(index, vidSlides.length - 1));
         vidTrack.style.transform = `translateX(-${vidCurrent * 100}%)`;
-        vidSlides[vidCurrent].querySelector('video').play();
+
+        const nextVideo = vidSlides[vidCurrent].querySelector('video');
+        if (nextVideo) nextVideo.play();
 
         document.querySelectorAll('.vid-dot').forEach((d, i) => {
             d.classList.toggle('active', i === vidCurrent);
@@ -518,153 +540,6 @@
     document.querySelector('.vid-next').addEventListener('click', () => vidGoTo(vidCurrent + 1));
 </script>
 
-<script>
-    const plainData = [
-        {
-            src: 'https://files.catbox.moe/q3cwzn.mp4',
-            title: 'Blood Donation Day',
-            cat: 'Health',
-            desc: 'In partnership with the Ministry of Health, ESAD organized a blood donation campaign that encouraged community participation and supported local blood banks.',
-            type: 'Community Volunteering',
-            typeIcon: 'bi-hand-thumbs-up-fill',
-            years: '2024 · 2025 · 2026',
-            location: 'Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/0s3p19.mp4',
-            title: 'Diabetes Day',
-            cat: 'Health',
-            desc: 'In collaboration with Gama Hospital, ESAD participated in World Diabetes Day, raising awareness among employees about the importance of early prevention and management.',
-            type: 'Internal Awareness',
-            typeIcon: 'bi-people-fill',
-            years: '2024 · 2025',
-            location: 'Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/2cwpb7.mp4',
-            title: 'First Aid Day',
-            cat: 'Health',
-            desc: 'We participated in World First Aid Day in collaboration with Dallah Hospital, where employees were trained and taught first aid techniques by clinical staff.',
-            type: 'Internal Awareness',
-            typeIcon: 'bi-people-fill',
-            years: '2025',
-            location: 'Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/684c1w.mp4',
-            title: 'Itaam Food Distribution',
-            cat: 'Welfare',
-            desc: 'In collaboration with Itaam Association, we supported the preparation and distribution of food boxes to families in need.',
-            type: 'Community Volunteering',
-            typeIcon: 'bi-hand-thumbs-up-fill',
-            years: '2024 · 2025',
-            location: 'Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/56u44w.mp4',
-            title: 'World Cleaning Day',
-            cat: 'Environment',
-            desc: 'Our collaboration with Dhahran and Riyadh Municipality to activate World Cleaning Day by helping clean gardens and beaches across the region.',
-            type: 'Community Volunteering',
-            typeIcon: 'bi-hand-thumbs-up-fill',
-            years: '2024 · 2025',
-            location: 'Riyadh · Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/ymprbh.mp4',
-            title: 'Breast Cancer Awareness',
-            cat: 'Health',
-            desc: 'Our participation in Breast Cancer Awareness initiatives, emphasizing to our employees the critical role of early screening and detection.',
-            type: 'Internal Awareness',
-            typeIcon: 'bi-people-fill',
-            years: '2024 · 2025',
-            location: 'Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/f1rypi.mp4',
-            title: 'World Health Day',
-            cat: 'Health',
-            desc: 'ESAD marked World Health Day in collaboration with GAMA Hospital through a health awareness initiative promoting employee wellbeing and healthy lifestyles.',
-            type: 'Internal Awareness',
-            typeIcon: 'bi-people-fill',
-            years: '2026',
-            location: 'Eastern Province'
-        },
-        {
-            src: 'https://files.catbox.moe/72nhbz.mp4',
-            title: 'World Occupational Health and Safety Day',
-            cat: 'Health',
-            desc: 'In collaboration with Al Mana College for Medical Sciences, ESAD organized an awareness initiative focused on workplace safety, wellbeing, and healthy posture.',
-            type: 'Internal Awareness',
-            typeIcon: 'bi-people-fill',
-            years: '2026',
-            location: 'Eastern Province'
-        },
-
-    ];
-    const plainTrack = document.querySelector('.plain-track');
-    const plainDotsContainer = document.querySelector('.plain-dots');
-    const plainCaptionBox = document.querySelector('.plain-caption-box');
-    let plainCurrent = 0;
-
-    // build slides and dots from data
-    plainData.forEach((d, i) => {
-        // slide
-        const slide = document.createElement('div');
-        slide.className = 'plain-slide';
-        const video = document.createElement('video');
-        video.src = d.src;
-        video.muted = true;
-        video.loop = true;
-        video.playsInline = true;
-        if (i === 0) video.autoplay = true;
-        video.addEventListener('click', function () {
-            if (this.requestFullscreen) this.requestFullscreen();
-            else if (this.webkitRequestFullscreen) this.webkitRequestFullscreen();
-            else if (this.webkitEnterFullscreen) this.webkitEnterFullscreen();
-        });
-        slide.appendChild(video);
-        plainTrack.appendChild(slide);
-
-        // dot
-        const dot = document.createElement('button');
-        dot.className = 'plain-dot' + (i === 0 ? ' active' : '');
-        dot.addEventListener('click', () => plainGoTo(i));
-        plainDotsContainer.appendChild(dot);
-    });
-
-    const plainSlides = plainTrack.querySelectorAll('.plain-slide');
-
-    function plainUpdateCaption(index) {
-        const d = plainData[index];
-        plainCaptionBox.innerHTML = `
-        <span class="vid-cat-badge">${d.cat}</span>
-        <h4>${d.title}</h4>
-        <p>${d.desc}</p>
-        <div class="plain-caption-meta">
-            <span><i class="bi ${d.typeIcon}"></i> ${d.type}</span>
-            <span><i class="bi bi-calendar"></i> ${d.years}</span>
-            <span><i class="bi bi-geo-alt-fill"></i> ${d.location}</span>
-        </div>
-    `;
-    }
-
-    function plainGoTo(index) {
-        plainSlides[plainCurrent].querySelector('video').pause();
-        plainCurrent = Math.max(0, Math.min(index, plainSlides.length - 1));
-        plainTrack.style.transform = `translateX(-${plainCurrent * 100}%)`;
-        plainSlides[plainCurrent].querySelector('video').play();
-        plainUpdateCaption(plainCurrent);
-        document.querySelectorAll('.plain-dot').forEach((d, i) => {
-            d.classList.toggle('active', i === plainCurrent);
-        });
-    }
-
-    document.querySelector('.plain-prev').addEventListener('click', () => plainGoTo(plainCurrent - 1));
-    document.querySelector('.plain-next').addEventListener('click', () => plainGoTo(plainCurrent + 1));
-
-    plainUpdateCaption(0);
-</script>
 </body>
 
 </html>
