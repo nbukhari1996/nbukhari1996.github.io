@@ -53,6 +53,10 @@ img {
     top: 0;
     z-index: 1000;
 }
+.site-nav .btn-pill-nav {
+    margin-right: 56px;
+}
+
 
 .logo-mark {
     font-weight: 800;
@@ -1295,24 +1299,40 @@ footer hr {
 }
 
 .btn-lang-toggle {
-    background: var(--navy);
-    border: 1px solid var(--navy);
-    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.btn-lang-toggle {
+    background: #fff;
+    border: 1.5px solid #d7dee6;
+    color: #1d5fae;
     font-family: inherit;
     font-size: .8rem;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    height: 38px;
+    padding: 0 14px;
+    border-radius: 19px;
     cursor: pointer;
     transition: .2s ease;
-    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.btn-lang-toggle i {
+    font-size: 1rem;
 }
 
 .btn-lang-toggle:hover {
-    background: var(--white);
-    border: 1px solid var(--navy);
-    color: var(--navy);
-    /*border-color: var(--navy);*/
+    background: #1d5fae;
+    border-color: #1d5fae;
+    color: #fff;
 }
 
 /* Arabic mode: swap the display font and mirror text alignment.
