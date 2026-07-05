@@ -1332,7 +1332,11 @@ footer hr {
 
 .project-img.no-overlay {
     background-color: #ffffff;
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .project-img.no-overlay::after {
     display: none;
 }
