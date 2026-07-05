@@ -208,7 +208,7 @@ img {
     line-height: 1;
     position: absolute;
     top: 14px;
-    left: 24px;
+    right: 24px;
 }
 
 .mission-card h3 {
