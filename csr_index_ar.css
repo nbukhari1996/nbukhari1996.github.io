@@ -1362,6 +1362,15 @@ footer hr {
     max-height: 90%;
     object-fit: contain;
 }
+.project-carousel,
+.pc-track-wrapper,
+.pc-track {
+    direction: ltr;
+}
+
+.pc-slide {
+    direction: rtl;
+}
 
 /* Arabic mode: swap the display font and mirror text alignment.
    Layout (grid/flex order, icons, slider mechanics) is left as-is;
