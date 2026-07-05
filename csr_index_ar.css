@@ -1349,6 +1349,19 @@ footer hr {
     object-fit: contain;
 }
 
+.vid-slide-image {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vid-slide-image img {
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
 
 /* Arabic mode: swap the display font and mirror text alignment.
    Layout (grid/flex order, icons, slider mechanics) is left as-is;
