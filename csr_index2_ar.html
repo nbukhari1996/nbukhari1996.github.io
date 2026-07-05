@@ -151,6 +151,22 @@
                     </div>
                 </div>
 
+                <div class="vid-slide vid-slide-image">
+                    <img src="https://esadtalents.com/content/imgs/logo.png" alt="حملة زراعة الأشجار">
+                    <div class="vid-overlay"></div>
+                    <div class="vid-caption">
+                        <span class="vid-cat-badge">بيئة</span>
+                        <h3>حملة زراعة الأشجار</h3>
+                        <p>حملة تطوعية لزراعة الأشجار، بالتعاون مع بلدية الخبر، لدعم الاستدامة البيئية وتعزيز المساحات
+                            الخضراء داخل المجتمع.</p>
+                        <div class="vid-meta">
+                            <span class="vid-meta-item"><i class="bi bi-hand-thumbs-up-fill"></i> تطوع</span>
+                            <span class="vid-meta-item"><i class="bi bi-calendar"></i> 2026</span>
+                            <span class="vid-meta-item"><i class="bi bi-geo-alt-fill"></i> المنطقة الشرقية</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="vid-slide">
                     <video src="https://vz-6a6d1e94-ffc.b-cdn.net/d16a502a-2743-466a-8905-db4ef7c7b9dc/play_1080p.mp4"
                            muted loop playsinline></video>
@@ -465,35 +481,43 @@
 </script>
 
 <script>
+
     const vidTrack = document.querySelector('.vid-track');
     const vidSlides = document.querySelectorAll('.vid-slide');
     const vidDotsContainer = document.querySelector('.vid-dots');
     let vidCurrent = 0;
 
-    // build dots
     vidSlides.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.className = 'vid-dot' + (i === 0 ? ' active' : '');
         dot.addEventListener('click', () => vidGoTo(i));
         vidDotsContainer.appendChild(dot);
     });
+
     vidSlides.forEach(slide => {
-        slide.querySelector('video').addEventListener('click', function () {
-            if (this.requestFullscreen) {
-                this.requestFullscreen();
-            } else if (this.webkitRequestFullscreen) {
-                this.webkitRequestFullscreen(); // Safari
-            } else if (this.webkitEnterFullscreen) {
-                this.webkitEnterFullscreen(); // iOS
-            }
-        });
+        const video = slide.querySelector('video');
+        if (video) {
+            video.addEventListener('click', function () {
+                if (this.requestFullscreen) {
+                    this.requestFullscreen();
+                } else if (this.webkitRequestFullscreen) {
+                    this.webkitRequestFullscreen();
+                } else if (this.webkitEnterFullscreen) {
+                    this.webkitEnterFullscreen();
+                }
+            });
+        }
     });
 
     function vidGoTo(index) {
-        vidSlides[vidCurrent].querySelector('video').pause();
+        const prevVideo = vidSlides[vidCurrent].querySelector('video');
+        if (prevVideo) prevVideo.pause();
+
         vidCurrent = Math.max(0, Math.min(index, vidSlides.length - 1));
         vidTrack.style.transform = `translateX(-${vidCurrent * 100}%)`;
-        vidSlides[vidCurrent].querySelector('video').play();
+
+        const nextVideo = vidSlides[vidCurrent].querySelector('video');
+        if (nextVideo) nextVideo.play();
 
         document.querySelectorAll('.vid-dot').forEach((d, i) => {
             d.classList.toggle('active', i === vidCurrent);
