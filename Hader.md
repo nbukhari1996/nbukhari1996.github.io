@@ -40,7 +40,7 @@ One UI version: 8.0
 
 Send OTP modal overflows at bottom of screen
 
-Fields are unappealing grey boxes with text, and no styling/icons or visual indicators. Acceptable but not ideal
+Fields are unappealing grey boxes with text, and no styling/icons or visual indicators
 
 <img width="348" height="773" alt="Pasted image 20260823145748" src="https://github.com/user-attachments/assets/390316cb-4785-417a-8701-d48401b3b066" />
 
