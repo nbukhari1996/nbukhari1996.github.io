@@ -26,10 +26,11 @@ One UI version: 8.0
 - Phone
 	- Field not restricted to 9 digits
 	- Users able to change area code to non-KSA number
-- **[Critical]** Asking for National ID without providing a disclosure in the privacy policy likely breaks Play Store compliance. 
-	- **[Critical]** Also likely breaks KSA's Personal Data Protection Law (PDPL) Article 11(3)
-		- "The content of the Personal Data shall be appropriate and limited to the minimum amount necessary to achieve the purpose of the Collection"
-		- National ID number is not necessary for single-visit home cleaning services
+- National ID
+	- **[Critical]** Asking for National ID without providing a disclosure in the privacy policy likely breaks Play Store compliance. 
+		- **[Critical]** Also likely breaks KSA's Personal Data Protection Law (PDPL) Article 11(3)
+			- "The content of the Personal Data shall be appropriate and limited to the minimum amount necessary to achieve the purpose of the Collection"
+			- National ID number is not necessary for single-visit home cleaning services
 - City
 	- **[Medium]** Mentions non-service locations, eg. Abu Dhabi
 	- **[Low]** Duplicates & incorrect spelling
