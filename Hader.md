@@ -49,7 +49,7 @@ One UI version: 8.0
 
 <img width="348" height="773" alt="Pasted image 20260823145748" src="https://github.com/user-attachments/assets/390316cb-4785-417a-8701-d48401b3b066" />
 
-**[Low]** After verifying the OTP 2 popups appear: Registration successful & OTP verified. Could show a single modal instead. 
+**[Low]** After verifying the OTP 2 popups appear: Registration successful & OTP verified. Could show a single popup instead. 
 
 #### Add Address
 - **[Medium]** Requires name, number, city, district again. Doesn't prefill using the information already provided
