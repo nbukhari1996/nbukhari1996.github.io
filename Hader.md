@@ -6,9 +6,15 @@ Android Version: 16
 
 One UI version: 8.0
 
+### Legend
+**[Critical]**
+**[High]**
+**[Medium]**
+**[Low]**
+
 ### App-start
-- 3 onboarding screens with generic text
-- Missing language setting early on. Users who speak only Arabic will have to go through the full registration + address + navigating to language settings flows in English
+- **[Low]** 3 onboarding screens with generic text
+- **[Medium]** Missing language setting early on. Users who speak only Arabic will have to go through the full registration + address + navigating to language settings flows in English
 
 ### Browse as guest
 - Unable to view any information about service offerings
