@@ -1,13 +1,16 @@
 ## Review
 
 Phone: Samsung Galaxy A06(SM-A065F/DS)
+
 Android Version: 16
+
 One UI version: 8.0
+
 ### App-start
 - Splash screen
 - Notification permission request
 - Another splash screen(Different one?)
-- 3 onboarding screens
+- 3 onboarding screens with generic text
 
 - Missing language setting early on. Users who speak only Arabic will have to go through the full registration + address + navigating to language settings flows in English
 ### Browse as guest
