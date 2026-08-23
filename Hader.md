@@ -36,13 +36,14 @@ One UI version: 8.0
 		- Gender
 
 Send OTP modal overflows at bottom of screen
+
 Fields are unappealing grey boxes with text, and no styling/icons or visual indicators. Acceptable but not ideal
 
 <img width="348" height="773" alt="Pasted image 20260823145748" src="https://github.com/user-attachments/assets/390316cb-4785-417a-8701-d48401b3b066" />
 
 After verifying the OTP 2 popups appear:
-Registration successful
-OTP verified
+
+Registration successful & OTP verified. Could show a single modal instead. 
 
 #### Add Address
 - Requires name, number, city, district again. Doesn't prefill using the information already provided
