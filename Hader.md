@@ -71,7 +71,7 @@ One UI version: 8.0
 - Asks for city and district again
 	- Filling in city doesn't filter the districts
 		- Shows districts from non-service locations, eg. Abu Dhabi
-- Possibly bugged districts, all of the districts open some shape in the specified city even if the district is not in Khobar
+- Bugged districts, all of the districts open some shape in the specified city even if the district is not in Khobar
 - Unable to get my location when pressing the "Current location" button
 - When trying to save an address, popup appears saying "The additional direction field is required"
 	- Unclear that this field has to be filled in the previous screen
