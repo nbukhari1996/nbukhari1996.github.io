@@ -33,7 +33,7 @@ One UI version: 8.0
 		- Doesn't filter to city that was picked
 		- Shows districts from non-service locations, eg. Abu Dhabi
 		- Duplicates & incorrect spelling
-	- Fields that seem not as important as a requirement for signing up:
+	- Fields that are unnecessary for signing up:
 		- Work sector
 		- Nationality
 		- Gender
