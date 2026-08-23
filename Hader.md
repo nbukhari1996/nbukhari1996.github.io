@@ -37,7 +37,9 @@ One UI version: 8.0
 
 Send OTP modal overflows at bottom of screen
 Fields are unappealing grey boxes with text, and no styling/icons or visual indicators. Acceptable but not ideal
+
 <img width="348" height="773" alt="Pasted image 20260823145748" src="https://github.com/user-attachments/assets/390316cb-4785-417a-8701-d48401b3b066" />
+
 After verifying the OTP 2 popups appear:
 Registration successful
 OTP verified
@@ -53,7 +55,9 @@ OTP verified
 	- Empty fields don't show an error immediately when a user interacts with a field and leaves without inputting data
 	- Field-level validation only appears after pressing "Proceed to Pin Location," and a popup appears too repeating the same information
 		- Able to enter a 3-digit phone number and it gets validated
+
 <img width="348" height="773" alt="Pasted image 20260823155124" src="https://github.com/user-attachments/assets/8e2b733f-5e41-46d5-8cb6-b57667432166" />
+
 - Overflow at bottom
 #### Map Pin
 - Shows a polygon on the map. Different from what most users would expect, which is being able to pin a location and retrieve their full address eg. Noon or HungerStation
@@ -66,11 +70,15 @@ OTP verified
 	- Unclear that this field has to be filled in the previous screen
 		- Validation didn't occur on the previous screen for this field
 	- Bug: Popup appears repeatedly
+
 <img width="348" height="773" alt="Screenshot 2026-08-23 155508" src="https://github.com/user-attachments/assets/a15848b9-bae7-494b-ab5e-3570fa9a673f" />
+
 - Overflow at bottom
 ### Home
 - "Add your address" at the top despite having just entered my address while signing up. This is because it didn't set the entered address as the default address
 - All 3 service buttons, the topbar, and the best offers section have different design schemes applied to them
+
 - <img width="348" height="773" alt="Screenshot 2026-08-23 160045 1" src="https://github.com/user-attachments/assets/9917b38a-eca0-4117-b76f-bae786bab4e7" />
+
 	- Meaning different color schemes, icons, typography, structure/theme of elements, etc.
 - Support icon is greyed out
