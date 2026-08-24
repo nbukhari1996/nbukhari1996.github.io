@@ -8,7 +8,7 @@ One UI version: 8.0
 
 Application Language: English
 
-### Severity Legend
+### Legend
 **[High]**
 **[Medium]**
 **[Low]**
@@ -35,22 +35,22 @@ Application Language: English
 ### Login
 
 ### Sign-up screen
-- **[Medium]** Too many required fields before a user can access the application
+- **[High]** Too many required fields before a user can access the application
 - Phone
 	- **[Bug]** Field not restricted to 9 digits
 	- **[Possible Bug]** Users able to change area code to non-KSA number
 - National ID
-	- **[High]** Asking for National ID without providing a disclosure in the privacy policy is possibly in violation of Play Store compliance.
+	- **[High]** Asking for National ID without providing a disclosure in the privacy policy is possibly in violation of Play Store compliance. **NEEDS CONFIRMATION**
  		- "Google's User Data policy requires you to be transparent about how your app handles personal and sensitive user data. You must disclose what data you collect, how you use it, and who it's shared with. You must provide a valid privacy policy, obtain user consent, and handle data securely. Additionally, you must offer users a way to delete their accounts and associated data" - https://support.google.com/googleplay/android-developer/answer/10144311?hl=en
-	- **[High]** Also possibly violates KSA's Personal Data Protection Law (PDPL) Article 11(3)
+	- **[High]** Also possibly violates KSA's Personal Data Protection Law (PDPL) Article 11(3) **NEEDS CONFIRMATION**
 		- "The content of the Personal Data shall be appropriate and limited to the minimum amount necessary to achieve the purpose of the Collection"
 		- National ID number is not necessary for single-visit home cleaning services
 - City
-	- **[Medium]** Mentions non-service locations, eg. Abu Dhabi
+	- **[High]** Mentions non-service locations, eg. Abu Dhabi
 	- **[Low]** Duplicates & incorrect spelling
 - District
-	- **[Medium]** Doesn't filter to city that was picked
-	- **[Medium]** Shows districts from non-service locations, eg. Abu Dhabi
+	- **[High]** Doesn't filter to city that was picked
+	- **[High]** Shows districts from non-service locations, eg. Abu Dhabi
 	- **[Low]** Duplicates & incorrect spelling
 - **[Medium]** Fields required that could be unnecessary for signing up:
 	- Work sector
@@ -61,7 +61,7 @@ Application Language: English
 <img width="250" height="555" alt="Screenshot_20260823_143552" src="https://github.com/user-attachments/assets/92374f4a-1f3c-49b6-b0f0-93c6c4930a1a" />
 
 - **[Medium]** Overflows at bottom
-- **[Low]** Inconsistent design schemes for success/failure messages. Success has a white transparent background with a green line on the side, while the failure message has a red background.
+- **[Low]** Inconsistent design schemes for success/failure messages. Success has a white transparent background with a green line on the left, while the failure message has a red background.
 
 <img width="250" height="555" alt="Pasted image 20260823145748" src="https://github.com/user-attachments/assets/390316cb-4785-417a-8701-d48401b3b066" />
 
@@ -84,10 +84,10 @@ Application Language: English
 - **[Low]** Overflow at bottom
 
 #### Map Pin
-- **[Medium]** Shows a polygon on the map. Different from what most users would expect, which is being able to pin a location and retrieve their full address eg. Noon or HungerStation
+- **[High]** Shows a polygon on the map. Different from what most users would expect, which is being able to pin a location and retrieve their full address eg. Noon or HungerStation
 - **[Low]** Asks for city and district again
-	- **[Low]** Filling in city doesn't filter the districts
-		- **[Low]** Shows districts from non-service locations, eg. Abu Dhabi
+	- **[Medium]** Filling in city doesn't filter the districts
+		- **[Medium]** Shows districts from non-service locations, eg. Abu Dhabi
 - **[Bug]** Bugged districts, all of the districts open some shape in the specified city even if the district is not in Khobar
 - **[Bug]** Unable to get my location when pressing the "Current location" button
 - **[Bug]** When trying to save an address, popup appears saying "The additional direction field is required"
@@ -159,10 +159,10 @@ Application Language: English
 
 <img width="250" height="555" alt="Screenshot_20260823_134809" src="https://github.com/user-attachments/assets/7de5c739-4b6c-4b58-8ef1-3bc96b0ff735" />
 
--  **[Bug]** Address at top gets cleared
+-  **[Bug]** Address at top is empty
 -  **[Medium]** Pressing the address at the top goes back to the previous screen and all progress is lost
 -  **[Low]** Contract Duration says "Months" in parentheses but it also displays weeks without any order
--  **[Medium]** Doesn't clarify how many visits per contract. Doesn't clarify any information! What is this visit even about? What will happen? No steps are provided. Will I receive a confirmation? Will I get a call before a service? Will it be the same time/cleaner each week/day?
+-  **[High]** Doesn't clarify how many visits per contract. Doesn't clarify any information! What is this visit even about? What will happen? No steps are provided. Will I receive a confirmation? Will I get a call before a service? Will it be the same time/cleaner each week/day?
 -  **[High]** No cart. Going to a previous page loses all progress
 
 #### Hospitality
@@ -193,7 +193,7 @@ Application Language: English
 <img width="250" height="555" alt="Screenshot_20260823_141502" src="https://github.com/user-attachments/assets/43c51eac-3d28-4725-a803-1cfe725039e0" />
 
 -  **[Bug]** Overflow at bottom
--  **[Medium]** Calculation for monthly payments greater than 1 year seems incorrect because the numbers don't add up
+-  **[High]** Calculation for monthly payments greater than 1 year seems incorrect because the numbers don't add up
 
 <img width="250" height="555" alt="Screenshot_20260824_100033" src="https://github.com/user-attachments/assets/25f9bef9-e746-4e25-8eda-a70fd04666b9" />
 
