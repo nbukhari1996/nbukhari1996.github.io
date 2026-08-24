@@ -6,6 +6,8 @@ Android Version: 16
 
 One UI version: 8.0
 
+Application Language: English
+
 ### Legend
 **[High]**
 **[Medium]**
