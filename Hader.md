@@ -114,7 +114,7 @@ Application Language: English
 #### Edit Address
 
 - When pressing "Edit" on an address, all previous information about the address is cleared and an empty form is presented
-- Missing field-level validations
+- Missing phone validations, able to save a 3-digit phone number
 - Editing address makes the success popup appear repeatedly
 
 <img width="250" height="555" alt="Screenshot_20260824_083735" src="https://github.com/user-attachments/assets/12ae8461-7329-4594-a1f7-132df3328c22" />
