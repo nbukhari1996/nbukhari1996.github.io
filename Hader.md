@@ -87,7 +87,8 @@ Application Language: English
 - Overflow at bottom
 
 - Navigating to homepage on adding new address makes the address popup appear repeatedly:
-<img width="250" height="555" alt="Screenshot_20260823_143713" src="https://github.com/user-attachments/assets/efb0e49b-4543-458e-9dde-7ae9bdff30a3" />
+
+<img width="250" height="555" alt="Screenshot_20260823_143812" src="https://github.com/user-attachments/assets/f8703cef-232d-40a0-82d1-2199b4325391" />
 
 ### Home
 - "Add your address" at the top despite having just entered my address while signing up. This is because it didn't set the entered address as the default address
