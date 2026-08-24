@@ -117,8 +117,8 @@ Application Language: English
 - Missing field-level validations
 - Editing address makes the success popup appear repeatedly
 
-<img width="250" height="555" alt="Screenshot_20260823_143812" src="https://github.com/user-attachments/assets/f8703cef-232d-40a0-82d1-2199b4325391" />
 <img width="250" height="555" alt="Screenshot_20260824_083735" src="https://github.com/user-attachments/assets/12ae8461-7329-4594-a1f7-132df3328c22" />
 <img width="250" height="555" alt="Screenshot_20260824_083713" src="https://github.com/user-attachments/assets/f968ee77-4c59-4ca9-9ef8-dae88ba2ceb9" />
+<img width="250" height="555" alt="Screenshot_20260823_143812" src="https://github.com/user-attachments/assets/f8703cef-232d-40a0-82d1-2199b4325391" />
 
 - Overflow at bottom
