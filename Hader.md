@@ -12,6 +12,7 @@ Application Language: English
 **[High]**
 **[Medium]**
 **[Low]**
+**[Bug]**
 
 ### App-start
 - **[Low]** 3 onboarding screens with generic text
