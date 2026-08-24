@@ -195,6 +195,7 @@ Application Language: English
 
 <img width="250" height="555" alt="Screenshot_20260824_100033" src="https://github.com/user-attachments/assets/25f9bef9-e746-4e25-8eda-a70fd04666b9" />
 
+- Overflow at bottom
 - Experience = 2.5 what? Years? Months?
 - CV Doesn't list skills or any other information. Repeats the information in the app
 - Selecting address at the top goes back to the previous screen
@@ -204,6 +205,10 @@ Application Language: English
 
 - Overflow at bottom
 - Missing Mada & Tamara payment options
+
+### Additional Service screen
+
+- Baby sitter service says coming soon but it's available in Hader Hourly
 
 ### Profile
 
