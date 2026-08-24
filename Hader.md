@@ -154,10 +154,56 @@ Application Language: English
 - Wording issue, button says "Monthly package" but the title of the screen is "Monthly contract"
 
 <img width="250" height="555" alt="Screenshot_20260823_134809" src="https://github.com/user-attachments/assets/7de5c739-4b6c-4b58-8ef1-3bc96b0ff735" />
+
 - Address at top gets cleared
 - Pressing the address at the top goes back to the previous screen and all progress is lost
 - Contract Duration says "Months" in parentheses but it also displays weeks without any order
-- Doesn't clarify how many visits per contract
+- Doesn't clarify how many visits per contract. Doesn't clarify any information! What is this visit even about? What will happen? No steps are provided. Will I receive a confirmation? Will I get a call before a service? Will it be the same time each week/day?
+- No cart. Going to a previous page loses all progress
+- Why is monthly service not a category in the previous screen that lists all service?
+
+#### Hospitality
+
+- Pressing the address icon up top goes back
+- Unclear what this is
+- Meaningless description, cut off text
+- When picking an unavailable start date, the error message is nonsensical
+
+#### Hourly babysitter service
+
+- No meaningful information in description, repeats title
+
+#### Hader extra hourly
+
+- Unclear what this is. How is this different from Hader Hourly?
+
+
+### Live-in service
+
+- Inconsistent design again. Different buttons from the rest of the app/service screens.
+- Is engineering professions a valid offering?
+- Service offerings are unclear. Live-in is not clarified. It is not clear that this requires signing a contract and is a long commitment
+- Inconsistent packages, displays packages in Arabic instead of English
+- No logical sorting of packages, not sorted by duration of time, or pricing
+- Installment "tenor" which seems to be an industry term, maybe not something a user would easily understand
+- "Select preferred due day of month" what is this for? No clue! Why is it a dropdown saying "Day 1" "Day 2" etc.? Surely a cleaner solution is possible
+
+<img width="250" height="555" alt="Screenshot_20260823_141502" src="https://github.com/user-attachments/assets/43c51eac-3d28-4725-a803-1cfe725039e0" />
+
+- Overflow at bottom
+- Calculation for monthly payments greater than 1 year seems incorrect because the numbers don't add up
+
+<img width="250" height="555" alt="Screenshot_20260824_100033" src="https://github.com/user-attachments/assets/25f9bef9-e746-4e25-8eda-a70fd04666b9" />
+
+- Experience = 2.5 what? Years? Months?
+- CV Doesn't list skills or any other information. Repeats the information in the app
+- Selecting address at the top goes back to the previous screen
+- Going back loses progress, no cart
+
+<img width="250" height="555" alt="Screenshot_20260824_100255" src="https://github.com/user-attachments/assets/62a0988e-257d-409e-8565-1e0b3475cc0e" />
+
+- Overflow at bottom
+- Missing Mada & Tamara payment options
 
 ### Profile
 
