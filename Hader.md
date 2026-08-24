@@ -30,7 +30,7 @@ Application Language: English
 - **[Medium]** Missing language setting early on. Users who speak only Arabic will have to go through the full registration + address + navigating to language settings flows in English
 
 ### Browse as guest
-- **[Medium]** Unable to view information about service offerings
+- **[Medium]** Unable to view information about service offerings, it only shows names of screens they can't access
 
 ### Login
 
