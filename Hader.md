@@ -65,7 +65,7 @@ Application Language: English
 	- Field-level validation only appears after pressing "Proceed to Pin Location," and a popup appears too repeating the same information
 		- Able to enter a 3-digit phone number and it gets validated
 
-<img width="348" height="773" alt="Pasted image 20260823155124" src="https://github.com/user-attachments/assets/8e2b733f-5e41-46d5-8cb6-b57667432166" />
+<img width="250" height="555" alt="Pasted image 20260823155124" src="https://github.com/user-attachments/assets/8e2b733f-5e41-46d5-8cb6-b57667432166" />
 
 - **[Low]** Overflow at bottom
 #### Map Pin
@@ -80,7 +80,7 @@ Application Language: English
 		- Validation didn't occur on the previous screen for this field
 	- Bug: Popup appears repeatedly
 
-<img width="348" height="773" alt="Screenshot 2026-08-23 155508" src="https://github.com/user-attachments/assets/a15848b9-bae7-494b-ab5e-3570fa9a673f" />
+<img width="250" height="555" alt="Screenshot 2026-08-23 155508" src="https://github.com/user-attachments/assets/a15848b9-bae7-494b-ab5e-3570fa9a673f" />
 
 - Overflow at bottom
 ### Home
@@ -88,15 +88,15 @@ Application Language: English
 - All 3 service buttons, the topbar, and the best offers section have different design schemes(different color schemes, icons, typography, structure/theme of elements, etc) applied to them
 - Support icon is greyed out
 
-<img width="348" height="773" alt="Screenshot 2026-08-23 160045 1" src="https://github.com/user-attachments/assets/9917b38a-eca0-4117-b76f-bae786bab4e7" />
+<img width="250" height="555" alt="Screenshot 2026-08-23 160045 1" src="https://github.com/user-attachments/assets/9917b38a-eca0-4117-b76f-bae786bab4e7" />
 
 - All 3 service offering screens have different/inconsistent design schemes
 
-<img width="348" height="773" alt="Screenshot_20260823_144555" src="https://github.com/user-attachments/assets/00c896f9-42f6-47ee-84a5-ce0ed1f1e035" />
+<img width="250" height="555" alt="Screenshot_20260823_144555" src="https://github.com/user-attachments/assets/00c896f9-42f6-47ee-84a5-ce0ed1f1e035" />
 
-<img width="348" height="773" alt="Screenshot_20260823_144602" src="https://github.com/user-attachments/assets/875c119e-f7e5-4f6b-b4b0-ea504f18c6b3" />
+<img width="250" height="555" alt="Screenshot_20260823_144602" src="https://github.com/user-attachments/assets/875c119e-f7e5-4f6b-b4b0-ea504f18c6b3" />
 
-<img width="348" height="773" alt="Screenshot_20260823_144559" src="https://github.com/user-attachments/assets/353ff4e4-ee08-4978-8598-bfeb1a864474" />
+<img width="250" height="555" alt="Screenshot_20260823_144559" src="https://github.com/user-attachments/assets/353ff4e4-ee08-4978-8598-bfeb1a864474" />
 
 
 ### Hourly Services
