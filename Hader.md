@@ -90,7 +90,7 @@ Application Language: English
 
 <img width="250" height="555" alt="Screenshot 2026-08-23 160045 1" src="https://github.com/user-attachments/assets/9917b38a-eca0-4117-b76f-bae786bab4e7" />
 
-- All 3 service offering screens have different/inconsistent design schemes
+- All 3 service offering screens have different design schemes
 
 <img width="250" height="555" alt="Screenshot_20260823_144555" src="https://github.com/user-attachments/assets/00c896f9-42f6-47ee-84a5-ce0ed1f1e035" />
 
