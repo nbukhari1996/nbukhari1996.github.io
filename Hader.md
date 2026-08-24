@@ -22,8 +22,8 @@ Application Language: English
 - **[High]** Address selection process needs work
 - **[High]** Missing cart functionality
 - **[High]** Missing thorough data validations
-- **[High]** Lack of trust-building elements
 - **[High]** Overflow at the bottom on almost every screen
+- **[Medium]** Lack of trust-building elements
 
 ### App-start
 - **[Low]** 3 onboarding screens with generic text, no app-specific information, no value
