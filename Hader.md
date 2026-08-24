@@ -68,6 +68,7 @@ Application Language: English
 <img width="250" height="555" alt="Pasted image 20260823155124" src="https://github.com/user-attachments/assets/8e2b733f-5e41-46d5-8cb6-b57667432166" />
 
 - **[Low]** Overflow at bottom
+
 #### Map Pin
 - Shows a polygon on the map. Different from what most users would expect, which is being able to pin a location and retrieve their full address eg. Noon or HungerStation
 - Asks for city and district again
@@ -79,10 +80,14 @@ Application Language: English
 	- Unclear that this field has to be filled in the previous screen
 		- Validation didn't occur on the previous screen for this field
 	- Bug: Popup appears repeatedly
-
+ 
 <img width="250" height="555" alt="Screenshot 2026-08-23 155508" src="https://github.com/user-attachments/assets/a15848b9-bae7-494b-ab5e-3570fa9a673f" />
 
 - Overflow at bottom
+
+- Navigating to homepage on adding new address makes the address popup appear repeatedly:
+<img width="250" height="555" alt="Screenshot_20260823_143713" src="https://github.com/user-attachments/assets/efb0e49b-4543-458e-9dde-7ae9bdff30a3" />
+
 ### Home
 - "Add your address" at the top despite having just entered my address while signing up. This is because it didn't set the entered address as the default address
 - All 3 service buttons, the topbar, and the best offers section have different design schemes(different color schemes, icons, typography, structure/theme of elements, etc) applied to them
