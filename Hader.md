@@ -133,7 +133,18 @@ Application Language: English
 <img width="250" height="555" alt="Screenshot_20260824_091403" src="https://github.com/user-attachments/assets/c2b4595c-5f76-476b-9351-9f12c738ba2c" />
 
 - Why are users then asked to select "Days" in the sliding day selection AFTER selecting it in the calendar? Why not allow users to just select the dates they want a visit in the calendar view? Confusing!
-- Bug: When selecting a start date in the calendar, then selecting a date after that in the sliding day selector, I am able to deselect the original date. But it doesn't update in the "Start Date."
+	- Bug: When selecting a start date in the calendar, then selecting a date after that in the sliding day selector, I am able to deselect the original date. But it doesn't update in the "Start Date."
+- Price at the bottom does not update instantly
+- Days of visit is unclear in the "package details" section, it just repeats the days and not the date. What happens when a user wants to book 2 consecutive Sundays? It just says Sunday/Sunday
+- The "package details" section is completely redundant, it only shows the information within the screen the user is already on
+
+#### Order Summary
+
+- Inconsistent design scheme. Colors/styles change once again
+- Inconsistent & confusing wording(eg. Uses "Experts" instead of "Staff" which was used in the previous screen. Why does it say "From" instead of "Nationality"?)
+- Pressing the edit icon on "Address" doesn't do anything
+- Pressing "Apply" repeatedly shows this popup, without clearing the previous popups first
+- 
 
 
 ### Profile
