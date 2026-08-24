@@ -84,4 +84,5 @@ One UI version: 8.0
 - "Add your address" at the top despite having just entered my address while signing up. This is because it didn't set the entered address as the default address
 - All 3 service buttons, the topbar, and the best offers section have different design schemes(different color schemes, icons, typography, structure/theme of elements, etc) applied to them
 <img width="348" height="773" alt="Screenshot 2026-08-23 160045 1" src="https://github.com/user-attachments/assets/9917b38a-eca0-4117-b76f-bae786bab4e7" />
+
 - Support icon is greyed out
