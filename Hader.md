@@ -104,7 +104,27 @@ Application Language: English
 
 ### Hourly Services
 
+- Options fade in, pressing options adds interactivity. Inconsistent design. Highly likely it's AI generated
 
+#### Hader Hourly
+
+- Doesn't convey what this service entails. What does "Hader Hourly" mean? Is this a cleaning service? What does "Hader Hourly" get me, a user? It wasn't clarified in the previous screen either
+- No further details about the service, what precisely occurs during "Hader Hourly."
+- Pressing the button redirects to the "Single Visit" screen.
+
+<img width="250" height="555" alt="Screenshot_20260823_140411" src="https://github.com/user-attachments/assets/82afad7f-195f-45ed-8cba-126fd96881fb" />
+
+- Pressing the "Address" pin at the top redirects to the previous page
+- Unclear button at top saying "Monthly package" monthly what? WHAT IS BEING PROVIDED TO ME? No further details on the Monthly Package screen either
+- Why is there a button to "Select shift" and "Visit period" for only 4 options? Why not display all 4 options for the user together?
+	- Possible solution: Users should be able to select precise timings for service, but unsure if this is logistically possible
+- "Arrival Time" text box provides contradictory information and it's unclear what it is trying to say. Why is there a different arrival time from what the user is selecting? Does 8 AM to 12 PM mean a cleaner will work for 4 hours? Or will they work 2/1 hours 30 minutes as specified in the text box?  The user doesn't know when they will get their cleaning service provided and the "Arrival Time" text confuses them even further!
+- Spelling mistakes
+
+<img width="250" height="555" alt="Screenshot_20260824_090616" src="https://github.com/user-attachments/assets/076a2508-35ad-4306-b1be-0545be18e172" />
+
+- Overflow at the bottom
+- Design inconsistency, picked date turns blue instead of a theme color
 
 
 
