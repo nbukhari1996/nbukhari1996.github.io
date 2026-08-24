@@ -157,6 +157,7 @@ Application Language: English
 - Address at top gets cleared
 - Pressing the address at the top goes back to the previous screen and all progress is lost
 - Contract Duration says "Months" in parentheses but it also displays weeks without any order
+- Doesn't clarify how many visits per contract
 
 ### Profile
 
