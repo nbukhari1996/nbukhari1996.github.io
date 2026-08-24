@@ -7,7 +7,6 @@ Android Version: 16
 One UI version: 8.0
 
 ### Legend
-**[Critical]**
 **[High]**
 **[Medium]**
 **[Low]**
