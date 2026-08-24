@@ -140,11 +140,13 @@ Application Language: English
 
 #### Order Summary
 
+<img width="250" height="555" alt="Screenshot_20260824_092355" src="https://github.com/user-attachments/assets/5cbf261f-eb70-4482-bcc2-02d409eedc53" />
+
 - Inconsistent design scheme. Colors/styles change once again
 - Inconsistent & confusing wording(eg. Uses "Experts" instead of "Staff" which was used in the previous screen. Why does it say "From" instead of "Nationality"?)
 - Pressing the edit icon on "Address" doesn't do anything
 - Pressing "Apply" repeatedly shows this popup, without clearing the previous popups first
-- 
+
 
 
 ### Profile
