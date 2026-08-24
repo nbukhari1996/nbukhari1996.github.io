@@ -274,11 +274,10 @@ Application Language: English
 ---
 ## General notes
 
-Confusing & unclear UI/UX
-Address selection process needs work
-Missing cart functionality
-Missing data validations
-Design scheme inconsistencies
-Lack of trust-building elements
-Overflow at the bottom needs to be checked on every page
-Design/Color/Typography issues throughout the app. No single coherent design scheme applied across the whole app, but different design schemes are joined together. 
+- Confusing & unclear UI/UX
+- Address selection process needs work
+- Missing cart functionality
+- Missing data validations
+- Design scheme inconsistencies
+- Lack of trust-building elements
+- Overflow at the bottom needs to be checked on every page
