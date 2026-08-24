@@ -15,11 +15,11 @@ Application Language: English
 **[Bug]**
 
 ### App-start
-- **[Low]** 3 onboarding screens with generic text
+- **[Low]** 3 onboarding screens with generic text, no app-specific information, no value
 - **[Medium]** Missing language setting early on. Users who speak only Arabic will have to go through the full registration + address + navigating to language settings flows in English
 
 ### Browse as guest
-- **[Medium]** Unable to view any information about service offerings
+- **[Medium]** Unable to view information about service offerings
 
 ### Login
 
@@ -206,11 +206,54 @@ Application Language: English
 - Overflow at bottom
 - Missing Mada & Tamara payment options
 
-### Additional Service screen
+### Additional Services
 
+<img width="250" height="555" alt="Screenshot_20260823_144602" src="https://github.com/user-attachments/assets/875c119e-f7e5-4f6b-b4b0-ea504f18c6b3" />
 - Baby sitter service says coming soon but it's available in Hader Hourly
 
+### Booking History
+- Different design scheme again. Buttons with black border are not used elsewhere. Calendar has a different design scheme
+- Can't press the filter button
+- Filters don't behave as expected. Why does it "Select" a filter when I press a button of a filter but only view it and don't select it?
+
+### Notifications
+- Can't remove/delete notifications
+
 ### Profile
+
+<img width="250" height="555" alt="Screenshot_20260824_102727" src="https://github.com/user-attachments/assets/bc096535-c7e1-4a38-a3b4-0b519b645ef4" />
+
+- Different design scheme once again. This is the cleanest one so far, but the rest of the app doesn't follow it
+
+#### Booking History
+
+- Repeats information already present in the Bookings tab
+
+#### Wallet
+
+- Inconsistent design, different from the rest of the app
+
+#### Invoices
+
+- Doesn't lead anywhere
+
+#### Favorites
+
+- Didn't see an option to set Favorites while exploring SPs, but see it here. How does one set a SP as favorite?
+
+#### Terms & Conditions
+- Says payment are due upon completion, but we ask for payment upfront
+
+#### FAQ
+
+<img width="250" height="555" alt="Screenshot_20260824_103209" src="https://github.com/user-attachments/assets/4ada3f44-59bb-4916-8509-50ba5d55eee7" />
+
+
+- It lists cleaning services we do not offer. Hader only offers 1 standard cleaning service, either as a one-time visit or a recurring visit
+- Booking a cleaning service option is not supposed to have email option
+- Cleaning service pricing does not depend on these factors
+- Is a person supposed to be there? Unsure. Other cleaning apps require not only a person but specifically a woman to be a home during cleaning time
+
 
 #### Edit Address
 
@@ -223,3 +266,19 @@ Application Language: English
 <img width="250" height="555" alt="Screenshot_20260823_143812" src="https://github.com/user-attachments/assets/f8703cef-232d-40a0-82d1-2199b4325391" />
 
 - Overflow at bottom
+
+#### Language
+
+- Selecting the language that is already set in the "Language" setting changes the language of the app again momentarily before it realizes the language was already selected! Only applies for Arabic
+
+---
+## General notes
+
+Confusing & unclear UI/UX
+Address selection process needs work
+Missing cart functionality
+Missing data validations
+Design scheme inconsistencies
+Lack of trust-building elements
+Overflow at the bottom needs to be checked on every page
+Design/Color/Typography issues throughout the app. No single coherent design scheme applied across the whole app, but different design schemes are joined together. 
