@@ -130,7 +130,10 @@ Application Language: English
 - Overflow at the bottom
 - Design inconsistency, picked date turns blue instead of a theme color
 
+<img width="250" height="555" alt="Screenshot_20260824_091403" src="https://github.com/user-attachments/assets/c2b4595c-5f76-476b-9351-9f12c738ba2c" />
 
+- Why are users then asked to select "Days" in the sliding day selection AFTER selecting it in the calendar? Why not allow users to just select the dates they want a visit in the calendar view? Confusing!
+- Bug: When selecting a start date in the calendar, then selecting a date after that in the sliding day selector, I am able to deselect the original date. But it doesn't update in the "Start Date."
 
 
 ### Profile
