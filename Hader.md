@@ -28,11 +28,11 @@ Application Language: English
 	- Field not restricted to 9 digits
 	- Users able to change area code to non-KSA number
 - National ID
-	- **[Critical]** Asking for National ID without providing a disclosure in the privacy policy likely breaks Play Store compliance.
- 	- - Google's User Data policy requires you to be transparent about how your app handles personal and sensitive user data. You must disclose what data you collect, how you use it, and who it's shared with. You must provide a valid privacy policy, obtain user consent, and handle data securely. Additionally, you must offer users a way to delete their accounts and associated data
-		- **[Critical]** Also likely breaks KSA's Personal Data Protection Law (PDPL) Article 11(3)
-			- "The content of the Personal Data shall be appropriate and limited to the minimum amount necessary to achieve the purpose of the Collection"
-			- National ID number is not necessary for single-visit home cleaning services
+	- **[High]** Asking for National ID without providing a disclosure in the privacy policy is possibly in violation of Play Store compliance.
+ 		- - Google's User Data policy requires you to be transparent about how your app handles personal and sensitive user data. You must disclose what data you collect, how you use it, and who it's shared with. You must provide a valid privacy policy, obtain user consent, and handle data securely. Additionally, you must offer users a way to delete their accounts and associated data
+	- **[High]** Also possibly violates KSA's Personal Data Protection Law (PDPL) Article 11(3)
+		- "The content of the Personal Data shall be appropriate and limited to the minimum amount necessary to achieve the purpose of the Collection"
+		- National ID number is not necessary for single-visit home cleaning services
 - City
 	- **[Medium]** Mentions non-service locations, eg. Abu Dhabi
 	- **[Low]** Duplicates & incorrect spelling
