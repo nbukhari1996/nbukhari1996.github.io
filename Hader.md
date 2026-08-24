@@ -9,6 +9,8 @@ One UI version: 8.0
 Application Language: English
 
 ### Legend
+Tags used to indicate severity:
+
 **[High]**
 **[Medium]**
 **[Low]**
