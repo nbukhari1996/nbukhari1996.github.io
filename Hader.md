@@ -46,7 +46,11 @@ Application Language: English
 	- Nationality
 	- Gender
 
-**[Medium]** Send OTP modal overflows at bottom of screen
+<img width="250" height="555" alt="Screenshot_20260823_143626" src="https://github.com/user-attachments/assets/7200e8a8-66b9-47f2-9f35-9bd4fcc6a3e4" />
+<img width="250" height="555" alt="Screenshot_20260823_143552" src="https://github.com/user-attachments/assets/92374f4a-1f3c-49b6-b0f0-93c6c4930a1a" />
+
+- **[Medium]** Overflows at bottom
+- Inconsistent design schemes for success/failure messages. Success has a white transparent background with a green line on the side, while the failure message has a red background. 
 
 **[Low]** Fields are unappealing grey boxes with text, and no styling/icons or visual indicators
 
