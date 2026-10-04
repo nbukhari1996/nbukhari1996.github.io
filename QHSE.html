@@ -69,9 +69,12 @@
 
 <script>
 /* ============ CONFIG — adjust to match the ESADDC site ============ */
+const STUB = true;   // true = every link goes to "#" (except the DCR form); set false to restore real links
+
 const CFG = {
   site: "https://esadtalents.sharepoint.com/sites/ESADDC",
   docControlEmail: "documentcontrol@esadservices.com",   // TODO
+  dcrForm: "https://esadtalents.sharepoint.com/:l:/s/QHSE/JAB2QSYDu2kLRKfvk9DyWkzsAZWOglO5OPBJbuXZSfFprRw?nav=NWQzODkzY2EtYzYxNy00MzU0LTg3NTMtNmVlYjI1MGNjNTMw",
   lists: {                                                // list/library titles + URL names
     controlled:   { title: "Controlled Documents",   url: "Controlled Documents" },
     uncontrolled: { title: "Uncontrolled Documents", url: "Uncontrolled Documents" },
@@ -104,17 +107,17 @@ const DEPARTMENTS = [
   ["Company-wide", "bi-buildings"],
 ];
 const TYPES = [
-  ["Policie", "bi-journal-check", "Rules and principles"], ["Procedure", "bi-list-ol", "How we do things"],
-  ["Form", "bi-ui-checks", "Records and templates"], ["Plan", "bi-map", "Programmes and plans"],
+  ["Policy", "bi-journal-check", "Rules and principles", "Policies"], ["Procedure", "bi-list-ol", "How we do things", "Procedures"],
+  ["Form", "bi-ui-checks", "Records and templates", "Forms"], ["Plan", "bi-map", "Programmes and plans", "Plans"],
 ];
 /* ================================================================== */
 
 const $ = id => document.getElementById(id);
 const enc = encodeURIComponent;
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const url = p => /^https?:/.test(p) ? p : `${CFG.site}/${p.split("/").map(enc).join("/")}`;
-const viewUrl = (l, field, val) => `${url(l.url)}/Forms/AllItems.aspx` + (field ? `?FilterField1=${field}&FilterValue1=${enc(val)}&FilterType1=Choice` : "");
-const listUrl = l => `${url(l.url)}/AllItems.aspx`;
+const url = p => STUB ? "#" : (/^https?:/.test(p) ? p : `${CFG.site}/${p.split("/").map(enc).join("/")}`);
+const viewUrl = (l, field, val) => STUB ? "#" : `${url(l.url)}/Forms/AllItems.aspx` + (field ? `?FilterField1=${field}&FilterValue1=${enc(val)}&FilterType1=Choice` : "");
+const listUrl = l => STUB ? "#" : `${url(l.url)}/AllItems.aspx`;
 const C = CFG.lists, F = CFG.f;
 
 /* ---- Counters (SharePoint REST, runs as the signed-in user) ---- */
@@ -176,7 +179,7 @@ const rest = async p => {
     const q = `web/lists/getbytitle('${C.controlled.title}')/items?$select=Id,Title,${F.docId},${F.revision},${F.effective},FileRef&$orderby=${F.effective} desc&$top=6&$filter=${enc(F.docStatus + " eq 'Active'")}`;
     const items = (await rest(q)).value;
     $("recent").innerHTML = items.map(i => `
-      <a href="${esc(i.FileRef)}?web=1" class="list-group-item list-group-item-action bg-light d-flex align-items-center gap-2">
+      <a href="${STUB ? "#" : esc(i.FileRef) + "?web=1"}" class="list-group-item list-group-item-action bg-light d-flex align-items-center gap-2">
         <i class="bi bi-file-earmark-text text-secondary"></i>
         <span class="small flex-grow-1">${esc(i.Title)}<br><span class="text-muted" style="font-size:12px;">${esc(i[F.docId])} · ${esc(i[F.revision])}</span></span>
         <span class="text-muted" style="font-size:12px;">${i[F.effective] ? new Date(i[F.effective]).toLocaleDateString("en-GB") : ""}</span>
@@ -188,8 +191,8 @@ const rest = async p => {
 
 /* ---- Actions ---- */
 const ACTIONS = [
-  { t: "Submit a document or change request", d: "New document, or a change to an existing one", i: "bi-file-earmark-plus", href: "https://esadtalents.sharepoint.com/:l:/s/QHSE/JAB2QSYDu2kLRKfvk9DyWkzsAZWOglO5OPBJbuXZSfFprRw?nav=NWQzODkzY2EtYzYxNy00MzU0LTg3NTMtNmVlYjI1MGNjNTMw", primary: true },
-  { t: "File a non-conformance report", d: "Report a process, product or service issue", i: "bi-exclamation-triangle", href: `${url(C.ncr.url)}/NewForm.aspx` },
+  { t: "Submit a document or change request", d: "New document, or a change to an existing one", i: "bi-file-earmark-plus", href: CFG.dcrForm, primary: true },
+  { t: "File a non-conformance report", d: "Report a process, product or service issue", i: "bi-exclamation-triangle", href: STUB ? "#" : `${url(C.ncr.url)}/NewForm.aspx` },
   { t: "Track my requests", d: "Status of everything I've submitted", i: "bi-signpost-split", href: listUrl(C.uncontrolled) },
 ];
 $("actions").innerHTML = ACTIONS.map(a => `
@@ -216,12 +219,12 @@ $("depts").innerHTML = DEPARTMENTS.map(([n, i]) => `
     </a>
   </div>`).join("");
 
-$("types").innerHTML = TYPES.map(([n, i, d]) => `
+$("types").innerHTML = TYPES.map(([n, i, d, pl]) => `
   <div class="col">
     <a href="${viewUrl(C.controlled, F.type, n)}" class="card h-100 bg-light border text-decoration-none text-reset">
       <div class="card-body p-3">
         <i class="bi ${i} fs-4 text-secondary"></i>
-        <p class="fw-semibold mb-0 mt-2" style="font-size: 14px;">${n}s</p>
+        <p class="fw-semibold mb-0 mt-2" style="font-size: 14px;">${pl}</p>
         <p class="text-muted mb-0" style="font-size: 12px;">${d}</p>
       </div>
     </a>
