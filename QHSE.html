@@ -188,7 +188,7 @@ const rest = async p => {
 
 /* ---- Actions ---- */
 const ACTIONS = [
-  { t: "Submit a document or change request", d: "New document, or a change to an existing one", i: "bi-file-earmark-plus", href: `${url(C.uncontrolled.url)}`, primary: true },
+  { t: "Submit a document or change request", d: "New document, or a change to an existing one", i: "bi-file-earmark-plus", href: `${url(esadtalents.sharepoint.com/:l:/s/QHSE/JAB2QSYDu2kLRKfvk9DyWkzsAZWOglO5OPBJbuXZSfFprRw?nav=NWQzODkzY2EtYzYxNy00MzU0LTg3NTMtNmVlYjI1MGNjNTMw)}`, primary: true },
   { t: "File a non-conformance report", d: "Report a process, product or service issue", i: "bi-exclamation-triangle", href: `${url(C.ncr.url)}/NewForm.aspx` },
   { t: "Track my requests", d: "Status of everything I've submitted", i: "bi-signpost-split", href: listUrl(C.uncontrolled) },
 ];
@@ -239,8 +239,8 @@ $("guides").innerHTML = rows([
   ["Document templates", "bi-file-earmark-ruled", url(L.templates)],
   ["Document ID numbering guide", "bi-hash", url(L.idGuide)],
   ["Document control procedure", "bi-journal-text", url(L.docControlProc)],
-  ["DMS user guide", "bi-book", url(L.userGuide)],
-  ["FAQ", "bi-question-circle", url(L.faq)],
+  // ["DMS user guide", "bi-book", url(L.userGuide)],
+  // ["FAQ", "bi-question-circle", url(L.faq)],
 ]);
 
 $("admin").innerHTML = rows([
